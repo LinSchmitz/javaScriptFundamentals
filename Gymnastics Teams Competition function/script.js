@@ -1,34 +1,29 @@
+// Arrow function to calculate average
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-function checkWinner(d1, d2, d3, k1, k2, k3) {
-  // const dolphinsScoreAvg = Math.round(calcAverage(6, 18, 89));
-  // const koalasScoreAvg = Math.round(calcAverage(588, 191, 10));
+// Function to check the winner
+function checkWinner(dScores, kScores) {
+  // Calculate averages
+  const dolphinsAvg = calcAverage(...dScores);
+  const koalasAvg = calcAverage(...kScores);
 
-  const dolphinsScoreAvg = Math.round(calcAverage(d1, d2, d3));
-  const koalasScoreAvg = Math.round(calcAverage(k1, k2, k3));
-
-  console.log(
-    dolphinsScoreAvg,
-    koalasScoreAvg,
-    dolphinsScoreAvg * 2,
-    koalasScoreAvg * 2,
-  );
-
-  if (dolphinsScoreAvg >= koalasScoreAvg * 2) {
+  // Determine winner based on double score rule
+  if (dolphinsAvg >= koalasAvg * 2) {
     console.log(
-      `Dolphins win the trophy with an average score of ${dolphinsScoreAvg} vs Koalas ${koalasScoreAvg}`,
+      `Dolphins win the trophy with an average score of ${dolphinsAvg} vs Koalas ${koalasAvg}`,
     );
-  } else if (koalasScoreAvg >= dolphinsScoreAvg * 2) {
+  } else if (koalasAvg >= dolphinsAvg * 2) {
     console.log(
-      `Koalas win the trophy with an average score of ${koalasScoreAvg} vs Dolphins ${dolphinsScoreAvg}`,
+      `Koalas win the trophy with an average score of ${koalasAvg} vs Dolphins ${dolphinsAvg}`,
     );
-  } else if (dolphinsScoreAvg === koalasScoreAvg) {
+  } else if (dolphinsAvg === koalasAvg) {
     console.log(
-      `It's a draw! Both teams have an average score of ${dolphinsScoreAvg}`,
+      `It's a draw! Both teams have an average score of ${dolphinsAvg}`,
     );
   } else {
     console.log("No team wins the trophy. Minimum score requirement not met.");
   }
 }
 
-checkWinner(1000, 20, 99, 61, 400, 50);
+// Test with Data 1
+checkWinner([1000, 20, 99], [61, 400, 50]);
