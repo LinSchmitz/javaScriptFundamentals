@@ -5,7 +5,7 @@ switch (customerType) {
   case "student":
     customerDataUsage <= 10
       ? console.log(
-          `User type: ${customerType}, Data usage: ${customerDataUsage}GB → Recommended plan: Basic Plan `,
+          `User type: ${customerType}, Data usage: ${customerDataUsage}GB → Recommended plan: Basic Plan`,
         )
       : customerDataUsage > 30
         ? console.log(
