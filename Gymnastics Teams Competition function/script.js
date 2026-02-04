@@ -1,11 +1,11 @@
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-function checkWinner() {
+function checkWinner(d1, d2, d3, k1, k2, k3) {
   // const dolphinsScoreAvg = Math.round(calcAverage(6, 18, 89));
   // const koalasScoreAvg = Math.round(calcAverage(588, 191, 10));
 
-  const dolphinsScoreAvg = Math.round(calcAverage(588, 191, 10));
-  const koalasScoreAvg = Math.round(calcAverage(6, 18, 89));
+  const dolphinsScoreAvg = Math.round(calcAverage(d1, d2, d3));
+  const koalasScoreAvg = Math.round(calcAverage(k1, k2, k3));
 
   console.log(
     dolphinsScoreAvg,
@@ -31,4 +31,4 @@ function checkWinner() {
   }
 }
 
-checkWinner();
+checkWinner(1000, 20, 99, 61, 400, 50);
