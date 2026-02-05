@@ -5,7 +5,6 @@ const calcTip = function (bill) {
 };
 
 const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(bills, tip);
 
 const total = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
-console.log(total);
+console.log(bills, tip, total);
