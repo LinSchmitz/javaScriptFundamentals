@@ -11,7 +11,7 @@ console.log(
   `${jonas.firsName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}  `,
 );
 
-//
+// Array
 // const calcAge = function (birthYear) {
 //   return 2026 - birthYear;
 // };
