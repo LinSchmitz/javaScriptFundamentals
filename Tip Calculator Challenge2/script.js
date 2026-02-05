@@ -5,4 +5,4 @@ const calcTip = function (bill) {
 };
 
 const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(tip);
+console.log(bills, tip);
