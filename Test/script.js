@@ -6,10 +6,12 @@
 //   }
 // }
 
-let i = 1;
-while (i <= 3) {
-  console.log(i);
-  i++;
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+while (dice !== 6) {
+  console.log(dice);
+  dice = Math.trunc(Math.random() * 6) + 1;
 }
 //  Loop
 
