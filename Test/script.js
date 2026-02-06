@@ -15,8 +15,8 @@ const jonas = {
 
   summerise: function () {
     this.summery = `${this.firstName} is a ${this.calcAge()} years old and he has ${
-      this.hasDriversLicense ? "a Drivers License" : "not Drivers License"
-    } `;
+      this.hasDriversLicense ? "a" : "no"
+    } Drivers License`;
     return this.summery;
   },
 };
