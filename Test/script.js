@@ -1,30 +1,50 @@
+//  Loop
+
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+
+const typeOfJonas = [];
+
+for (let i = 0; i < jonasArray.length; i++) {
+  // console.log(jonasArray[i], typeof jonasArray[i]);
+  // typeOfJonas[i] = typeof jonasArray[i];
+  typeOfJonas.push(typeof jonasArray[i]);
+  console.log(typeOfJonas[i]);
+}
+
 // Object Methods
 
-const jonas = {
-  firstName: "Jonas",
-  lastName: "Schmedtmann",
-  birthYeah: 2000,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Steven"],
-  hasDriversLicense: true,
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   birthYeah: 2000,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"],
+//   hasDriversLicense: true,
 
-  calcAge: function () {
-    this.age = 2037 - this.birthYeah;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYeah;
+//     return this.age;
+//   },
 
-  summerise: function () {
-    this.summery = `${this.firstName} is a ${this.calcAge()} years old and he has ${
-      this.hasDriversLicense ? "a" : "no"
-    } Drivers License`;
-    return this.summery;
-  },
-};
+//   summerise: function () {
+//     this.summery = `${this.firstName} is a ${this.calcAge()} years old and he has ${
+//       this.hasDriversLicense ? "a" : "no"
+//     } Drivers License`;
+//     return this.summery;
+//   },
+// };
 
 // console.log(jonas.calcAge());
 // console.log(jonas.age);
 
-console.log(jonas.summerise());
+// console.log(jonas.summerise());
 // console.log(jonas.summery);
 
 //objectc
