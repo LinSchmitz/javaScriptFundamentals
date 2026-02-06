@@ -1,11 +1,16 @@
 //nested Loop
 
-for (let i = 1; i <= 3; i++) {
-  for (let j = 1; j <= 10; j++) {
-    console.log(` excersize no ${[i]} repeate ${[j]} times`);
-  }
-}
+// for (let i = 1; i <= 3; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//     console.log(` excersize no ${[i]} repeate ${[j]} times`);
+//   }
+// }
 
+let i = 1;
+while (i <= 3) {
+  console.log(i);
+  i++;
+}
 //  Loop
 
 // const jonasArray = [
