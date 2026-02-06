@@ -3,7 +3,7 @@
 const jonas = {
   firstName: "Jonas",
   lastName: "Schmedtmann",
-  birthYeah: 1991,
+  birthYeah: 2000,
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
   hasDriversLicense: true,
@@ -12,9 +12,20 @@ const jonas = {
     this.age = 2037 - this.birthYeah;
     return this.age;
   },
+
+  summerise: function () {
+    this.summery = `${this.firstName} is a ${this.calcAge()} years old and he has ${
+      this.hasDriversLicense ? "a Drivers License" : "not Drivers License"
+    } `;
+    return this.summery;
+  },
 };
 
-console.log(jonas.calcAge(1991));
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+
+console.log(jonas.summerise());
+// console.log(jonas.summery);
 
 //objectc
 
