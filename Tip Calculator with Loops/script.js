@@ -1,4 +1,4 @@
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const bills = [23, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let tip = [];
 let total = [];
 
@@ -24,7 +24,6 @@ const calcAverage = function (arr) {
 };
 
 calcAverage(bills);
-
 //////////////// jonas
 
 // const calcTip = function (bill) {
