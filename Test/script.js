@@ -1,15 +1,23 @@
+//nested Loop
+
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 10; j++) {
+    console.log(` excersize no ${[i]} repeate ${[j]} times`);
+  }
+}
+
 //  Loop
 
-const jonasArray = [
-  "Jonas",
-  "Schmedtmann",
-  2037 - 1991,
-  "teacher",
-  ["Michael", "Peter", "Steven"],
-  true,
-];
+// const jonasArray = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+//   true,
+// ];
 
-const typeOfJonas = [];
+// const typeOfJonas = [];
 
 // for (let i = 0; i < jonasArray.length; i++) {
 //   // console.log(jonasArray[i], typeof jonasArray[i]);
@@ -18,10 +26,10 @@ const typeOfJonas = [];
 //   console.log(typeOfJonas[i]);
 // }
 
-for (let i = jonasArray.length - 1; i >= 0; i--) {
-  console.log(jonasArray[i]);
-  // typeOfJonas[i] = typeof jonasArray[i];
-}
+// for (let i = jonasArray.length - 1; i >= 0; i--) {
+//   console.log(jonasArray[i]);
+//   // typeOfJonas[i] = typeof jonasArray[i];
+// }
 
 // Object Methods
 
