@@ -1,15 +1,33 @@
-//objectc
+// Object Methods
 
 const jonas = {
-  firsName: "jonas",
-  lastName: "schmedtmann",
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  birthYeah: 1991,
   job: "teacher",
-  friends: ["Michel", "peter", "stefan"],
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYeah;
+    return this.age;
+  },
 };
 
-console.log(
-  `${jonas.firsName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}  `,
-);
+console.log(jonas.calcAge(1991));
+
+//objectc
+
+// const jonas = {
+//   firsName: "jonas",
+//   lastName: "schmedtmann",
+//   job: "teacher",
+//   friends: ["Michel", "peter", "stefan"],
+// };
+
+// console.log(
+//   `${jonas.firsName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}  `,
+// );
 
 // Array
 // const calcAge = function (birthYear) {
