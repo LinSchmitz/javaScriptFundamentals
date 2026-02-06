@@ -11,11 +11,16 @@ const jonasArray = [
 
 const typeOfJonas = [];
 
-for (let i = 0; i < jonasArray.length; i++) {
-  // console.log(jonasArray[i], typeof jonasArray[i]);
+// for (let i = 0; i < jonasArray.length; i++) {
+//   // console.log(jonasArray[i], typeof jonasArray[i]);
+//   // typeOfJonas[i] = typeof jonasArray[i];
+//   typeOfJonas.push(typeof jonasArray[i]);
+//   console.log(typeOfJonas[i]);
+// }
+
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+  console.log(jonasArray[i]);
   // typeOfJonas[i] = typeof jonasArray[i];
-  typeOfJonas.push(typeof jonasArray[i]);
-  console.log(typeOfJonas[i]);
 }
 
 // Object Methods
