@@ -6,6 +6,7 @@ const calcTempAmplitude = function (temps) {
 
   for (let i = 0; i < temps.length; i++) {
     const currentTemp = temps[i];
+    if (typeof currentTemp !== "number") continue;
 
     if (currentTemp > max) max = currentTemp;
     if (currentTemp < min) min = currentTemp;
@@ -14,4 +15,5 @@ const calcTempAmplitude = function (temps) {
   console.log(max, min, max - min);
 };
 
-calcTempAmplitude([3, 17, 9, -1]);
+// calcTempAmplitude([3, 17, 9, "error", -1]);
+calcTempAmplitude(temperatures);
