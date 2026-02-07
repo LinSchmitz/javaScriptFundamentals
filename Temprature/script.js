@@ -1,4 +1,8 @@
-const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+const temperatures1 = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+const temperatures2 = [3, 12, -8, 10, 5];
+
+const temperatures = temperatures1.concat(temperatures2);
+console.log(temperatures);
 
 const calcTempAmplitude = function (temps) {
   let max = temps[0];
