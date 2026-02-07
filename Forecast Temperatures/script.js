@@ -1,7 +1,9 @@
-//  Data 1: `[17, 21, 23]`
-// Data 2: `[12, 5, -5, 0, 4]`
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
 
-const temp = [17, 21, 23];
+const data = data1.concat(data2);
+const data1Flat = data1.flat();
+console.log(data1Flat);
 
 const printForecast = function (arr) {
   for (let i = 0; i < arr.length; i++) {
